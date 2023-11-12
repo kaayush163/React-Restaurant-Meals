@@ -6,4 +6,3 @@ const Card = (props) => {
 };
 
 export default Card;
-//note data come from AvailableMe
