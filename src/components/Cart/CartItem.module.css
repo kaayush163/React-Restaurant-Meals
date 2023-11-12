@@ -2,14 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #8a2b06;
+    border-bottom: 2px solid #b09b93;
     padding: 1rem 0;
     margin: 1rem 0;
   }
   
   .cart-item h2 {
     margin: 0 0 0.5rem 0;
-    color: #363636;
+    color: #110303;
   }
   
   .summary {
@@ -21,7 +21,7 @@
   
   .price {
     font-weight: bold;
-    color: #8a2b06;
+    color: #db4964;
   }
   
   .amount {

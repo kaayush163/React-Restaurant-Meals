@@ -17,7 +17,7 @@ const HeaderCardButton = (props) => {
       <span className={classes.icon}>
         <CartIcon />
       </span>
-      <span>Your Cart</span>
+      <span>Check CartItems</span>
       <span className={classes.badge}>{numberOfCartItem}</span>
     </button>
     // </Fragment>
