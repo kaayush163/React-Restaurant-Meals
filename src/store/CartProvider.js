@@ -1,6 +1,11 @@
 import React, { useReducer } from "react";
 import CartContext from "./cart-context";
 
+// Defining the initial state and the reducer
+const defaultCartState = {
+  items: [],
+  totalamount: 0,
+};
 
 const cartReducer = (state, action) => {
   if (action.type === "ADD") {
@@ -65,8 +70,7 @@ const cartReducer = (state, action) => {
     };
   }
   return defaultCartState;
-}; 
-
+};
 
 const CartProvider = (props) => {
   // Initialising useReducer hook
@@ -75,7 +79,7 @@ const CartProvider = (props) => {
     defaultCartState
   );
   const addItemToCartHandler = (item) => {
-    //console.log(item); 
+    //console.log(item);
     dispatchCartAction({ type: "ADD", item: item });
   };
   const hideCartHandler = (id) => {
